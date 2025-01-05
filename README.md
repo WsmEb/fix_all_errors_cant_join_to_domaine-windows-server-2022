@@ -1,6 +1,6 @@
 # fix_all_errors_cant_join_to_domaine-windows-server-2022
 
-<h3> But first you have to check if the dns name is correct,the 2 machine are in the same network by : <code>ping <your-target-ip-address> </code> </h3>
+<h3> But first you have to check if the dns name is correct,the 2 machine are in the same network by : <code>ping 'your-target-ip-address' </code> </h3>
 - check the time&date in the 2 machine are correct like your home os date&time.
 - check your computer-name is changed (client-windows)
 - check your windows version is not home version may be entreprise version.
@@ -54,7 +54,7 @@ disable firewall in the 2 machine server and client with this command :
 netsh advfirewall set allprofiles state off
 </code>
 
-# in this case if you run <code> nslookup <your-domaine> </code>  ,and it result you the dns name of your local home internet provider 
+# in this case if you run <code> nslookup 'your-domaine' </code>  ,and it result you the dns name of your local home internet provider 
 
 use this commands in the client machine:
 <code>
